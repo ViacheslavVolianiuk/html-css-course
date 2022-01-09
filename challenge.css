@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
@@ -38,18 +39,16 @@ h3 {
   margin-bottom: 7px;
 }
 
-.price {
+.shipping {
   font-size: 14px;
   color: rgb(97, 97, 97);
   font-weight: bold;
-  margin-bottom: 20px;
 }
 
 a:link,
 a:visited {
   color: black;
   margin-bottom: 15px;
-  display: inline-block;
 }
 
 a:hover,
@@ -85,12 +84,16 @@ a:active {
   left: -25px;
 }
 
+.colors {
+  margin-top: 20px;
+  display: flex;
+  gap: 5px;
+}
+
 .color {
   background-color: #000;
   height: 22px;
   width: 22px;
-  display: inline-block;
-  margin-right: 5px;
 }
 
 .color-blue {
@@ -111,4 +114,28 @@ a:active {
 
 .color-brown {
   background-color: brown;
+}
+.price {
+  font-size: 22px;
+}
+
+.flex-cont {
+  display: flex;
+  gap: 30px;
+}
+
+.price-container {
+  flex: 1;
+}
+
+.details {
+  flex: 1;
+}
+
+.price-shipping {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 15px;
 }
